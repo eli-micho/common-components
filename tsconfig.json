@@ -1,0 +1,38 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "setupTests.ts"
+  ],
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015", // "es2015" makes Typescript compiler output compatible with Rollup
+    "declaration": true, // generates .d.ts files inside the output directory
+    "lib": [
+      "es2017",
+      "es2015",
+      "dom"
+    ],
+    "allowJs": false,
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "removeComments": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+    
+    },
+  },
+}
